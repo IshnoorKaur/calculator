@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS file-->
+    <link rel="stylesheet" href="webstyle.css">
+</head>
+
+<body>
+    <title>Calculator</title>
+
+    <div class="calculator">
+        <input text="type" id="display" disabled>
+
+        <!---Create the buttons for numbers 0-9 and operators-->
+        <div class="buttons">
+
+            <!--Numbers-->
+            <button id="number" onclick="appendToDisplay('1')">1</button>
+            <button id="number" onclick="appendToDisplay('2')">2</button>
+            <button id="number" onclick="appendToDisplay('3')">3</button>
+            <button id="number" onclick="appendToDisplay('4')">4</button>
+            <button id="number" onclick="appendToDisplay('5')">5</button>
+            <button id="number" onclick="appendToDisplay('6')">6</button>
+            <button id="number" onclick="appendToDisplay('7')">7</button>
+            <button id="number" onclick="appendToDisplay('8')">8</button>
+            <button id="number" onclick="appendToDisplay('9')">9</button>
+            <button id="number" onclick="appendToDisplay('0')">0</button>
+
+
+            <!---Operators-->
+            <button id="operator" onclick="appendToDisplay('+')">+</button>
+            <button id="operator" onclick="appendToDisplay('-')">-</button>
+            <button id="operator" onclick="appendToDisplay('/')">/</button>
+            <button id="operator" onclick="appendToDisplay('x')">x</button>
+            <button id="operator" onclick="appendToDisplay('.')">.</button>
+            <button id="negative" onclick="toNegative('(-)')">(-)</button>
+
+
+
+            <!---Other buttons-->
+            <button id="equals" onclick="calculate()">=</button>
+            <button id="clear" onclick="clearDisplay()">C</button>
+
+        </div>
+
+    </div>
+
+    <!---JavaScript File-->
+    <script src="script.js"></script>
+</body>
+
+</html>
